@@ -17,10 +17,10 @@ puts "enter your first number"
 first_number=gets.chomp
 puts "enter your second number"
 second_number=gets.chomp
-puts "two number multiply #{add(first_number, second_number)}"
-puts "two number multiply #{subtract(first_number, second_number)}"
+puts "two number add #{add(first_number, second_number)}"
+puts "two number subtract #{subtract(first_number, second_number)}"
 puts "two number multiply #{multiply(first_number, second_number)}"
-puts "two number multiply #{divide(first_number, second_number)}"
-puts "two number multiply #{mod(first_number, second_number)}"
+puts "two number divide #{divide(first_number, second_number)}"
+puts "two number mod #{mod(first_number, second_number)}"
 
 
