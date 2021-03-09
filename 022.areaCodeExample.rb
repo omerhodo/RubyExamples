@@ -66,11 +66,14 @@ def get_area_code(dial_book)
 end
 
 loop do
+    puts "Bölge kodunu öğrenmek istiyor musunuz?(Y/N)"
+    answer =gets.chomp.downcase
+    break if answer != "y"
     get_city_names(dial_book)
     51.times{print "-"}
     puts
     print "Bölge kodunu öğrenmek istediğiniz şehri yazınız:"
-    sehir=gets.chomp
+    sehir=gets.chomp.downcase
     dial_book.each do |k, v| 
         if sehir==k
             puts "Aradığınız bölge kodu: #{v}"

@@ -1,6 +1,7 @@
 class Student
     attr_accessor :first_name, :last_name, :email, :username, :password
-    def initialize(first_name, last_name, email, username, password)
+
+    def initialize(first_name,last_name,email,username,password)
         @first_name=first_name
         @last_name=last_name
         @email=email
@@ -9,20 +10,22 @@ class Student
     end
 
     def to_s
-        "First name: #{@first_name}, last name: #{@last_name}, email: #{@email}, user name: #{@username}, password: #{@password}"
-    end
-    
-    def run
-        puts "i am running"
-    end
-    
-    def self.identify_yourself
-        puts "hey i am a class method"
+        "First name: #{@first_name}, Last name: #{@last_name}, Email: #{@email}, Username: #{username}"
     end
 end
 
-student = Student.new("omer","hodo","omerhodo@gmail.com","omerhodo","0123")
-puts student
+harun= Student.new("harun","dilek","ha@gg.com","hd","123")
+hodo = Student.new("omer","hodo","omerhodo@gmail.com","oh","123")
+yilmaz= Student.new("yılmaz","çalışkan","yi@gg.com","yc","123")
+mustafa= Student.new("mustafa","cankaya","mu@gg.com","mc","123")
 
-Student.identify_yourself
-student.run
+puts harun
+puts hodo
+puts yilmaz
+puts mustafa
+
+yilmaz.last_name=mustafa.last_name
+20.times{print ("*")}
+puts 
+puts "Yılmaz altered"
+puts yilmaz
